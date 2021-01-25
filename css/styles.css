@@ -220,6 +220,10 @@ Navbar
   transition: all 1s linear;
 }
 
+.nav-logo {
+  height: 100%;
+}
+
 .nav-center {
   width: 100%;
   max-width: 1170px;
@@ -248,6 +252,7 @@ Navbar
   top: 0;
   left: 0;
   width: 100%;
+  height: 80px;
   background: var(--clr-white);
   z-index: 2;
   box-shadow: var(--light-shadow);
@@ -285,7 +290,10 @@ Navbar
   .nav-center {
     display: grid;
     grid-template-columns: auto 1fr;
-    align-items: center;
+  }
+
+  .nav-logo {
+    height: 100%
   }
 }
 
