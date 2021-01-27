@@ -729,6 +729,179 @@ Connect
 Skills
 ===============
 */
+@media screen and (min-width:768px) {
+  .skills-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+.skills {
+  background: var(--clr-primary-9);
+}
+
+.skills h3 {
+  margin: 1.5rem 0;
+  color: var(--clr-primary-1);
+}
+
+.skill {
+  margin-bottom: 1.25rem;
+}
+
+.skill p {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: var(--clr-primary-1);
+}
+
+.skill-container {
+  background: var(--clr-white);
+  height: 1rem;
+  width: 100%;
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.skill-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--clr-primary-5);
+  height: 100%;
+  width: 50%;
+  border-radius: var(--radius);
+}
+
+.skill-text {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* text following progress bar */
+
+.text-0 {
+  left: 0%;
+  display: none;
+}
+
+.text-10 {
+  left: 13%;
+}
+
+/* setting up percentage for all screens */
+
+@media screen and (min-width: 768px) {
+  .text-10 {
+    left: 16%;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .text-10 {
+    left: 18%;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .text-10 {
+    left: 14%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text-10 {
+    left: 12%;
+  }
+}
+
+.text-20 {
+  left: 20%;
+}
+
+.text-30 {
+  left: 30%;
+}
+
+.text-40 {
+  left: 40%;
+}
+
+.text-50 {
+  left: 50%;
+}
+
+.text-60 {
+  left: 60%;
+}
+
+.text-70 {
+  left: 70%;
+}
+
+.text-80 {
+  left: 80%;
+}
+
+.text-90 {
+  left: 90%;
+}
+
+.text-100 {
+  left: 100%;
+}
+
+/* progress bar percentage */
+
+.value-0 {
+  width: 0%;
+}
+
+.value-10 {
+  width: 10%;
+}
+
+.value-20 {
+  width: 20%;
+}
+
+.value-30 {
+  width: 30%;
+}
+
+.value-40 {
+  width: 40%;
+}
+
+.value-50 {
+  width: 50%;
+}
+
+.value-60 {
+  width: 60%;
+}
+
+.value-70 {
+  width: 70%;
+}
+
+.value-80 {
+  width: 80%;
+}
+
+.value-90 {
+  width: 90%;
+}
+
+.value-100 {
+  width: 100%;
+}
+
+
+
 /*
 =============== 
 Timeline
