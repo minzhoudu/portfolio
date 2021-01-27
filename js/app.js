@@ -9,6 +9,8 @@ const closeBtn = document.querySelector("#close-btn");
 
 const navbar = document.querySelector("#nav");
 
+const date = document.querySelector('#date')
+
 //! show/hide sidebar
 navBtn.addEventListener("click", function () {
   sidebar.classList.add("show-sidebar");
@@ -27,3 +29,7 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("navbar-fixed");
   }
 })
+
+//! displayig date in footer
+
+date.innerHTML = new Date().getFullYear();
