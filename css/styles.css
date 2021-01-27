@@ -699,7 +699,7 @@ Connect
   /* background: rgba(0, 0, 0, 0.7); //without opacity */
   background: var(--clr-white);
   /* background: var(--clr-primary-5); */
-  opacity: 0.7;
+  opacity: 0.2;
   z-index: -1;
 }
 
@@ -707,6 +707,7 @@ Connect
   background: var(--clr-primary-10);
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
 
 .video-banner .section-title {
@@ -715,6 +716,12 @@ Connect
 
 .video-text {
   max-width: 30rem;
+}
+
+@media screen and (min-width:768px) {
+  .connect {
+    clip-path: polygon(50% 0, 100% 15%, 100% 85%, 50% 100%, 0 85%, 0 15%);
+  }
 }
 
 /*
