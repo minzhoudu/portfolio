@@ -11,7 +11,7 @@ const Navbar: FC<NavbarProps> = () => {
     const [navOpen, setNavOpen] = useState(false);
 
     return (
-        <nav className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-primaryGray text-gray-300">
+        <nav className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-primaryGray text-white shadow-md shadow-black">
             <div>
                 <img src={Logo} alt="PJ logo image" className="w-48" />
             </div>
@@ -20,10 +20,11 @@ const Navbar: FC<NavbarProps> = () => {
                 {navOpen ? <FaTimes /> : <FaBars />}
             </div>
 
-            {navOpen ? <MobileNav /> : <DesktopNav />}
+            <DesktopNav />
+
+            {navOpen && <MobileNav />}
         </nav>
     );
 };
 
 export default Navbar;
- 

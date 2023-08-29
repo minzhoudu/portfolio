@@ -7,8 +7,8 @@ export default {
             colors: {
                 primaryGray: "#222629",
                 primaryLime: {
-                    DEFAULT: "86C232",
-                    dark: "669622",
+                    DEFAULT: "#86C232",
+                    dark: "#669622",
                 },
             },
         },

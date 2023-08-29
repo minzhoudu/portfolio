@@ -1,5 +1,6 @@
 import { FC } from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+// import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 interface DesktopNavProps {}
 
@@ -7,31 +8,30 @@ const DesktopNav: FC<DesktopNavProps> = () => {
     return (
         <>
             {/* Menu */}
-            <ul className="hidden md:flex">
-                <li>Home</li>
-                <li>About</li>
-                <li>My Work</li>
-                <li>Content</li>
+            <ul className="hidden md:flex text-xl">
+                <li>
+                    <NavLink className={({ isActive }) => (isActive ? "text-primaryLime" : "")} to="/">
+                        Home
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className={({ isActive }) => (isActive ? "text-primaryLime" : "")} to="/about">
+                        About
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className={({ isActive }) => (isActive ? "text-primaryLime" : "")} to="/work">
+                        My Work
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className={({ isActive }) => (isActive ? "text-primaryLime" : "")} to="/content">
+                        Content
+                    </NavLink>
+                </li>
             </ul>
 
             {/* Social icons */}
-            <div className="flex gap-x-16 fixed bottom-10 left-[50%] translate-x-[-50%]">
-                <a className="hover:opacity-50" href="/">
-                    <FaLinkedin size={50} />
-                </a>
-
-                <a className="hover:opacity-50" href="/">
-                    <FaGithub size={50} />
-                </a>
-
-                <a className="hover:opacity-50" href="/">
-                    <FaInstagram size={50} />
-                </a>
-
-                <a className="hover:opacity-50" href="/">
-                    <FaLinkedin size={50} />
-                </a>
-            </div>
         </>
     );
 };
