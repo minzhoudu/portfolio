@@ -1,12 +1,9 @@
 import { FC } from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 interface MobileNavProps {}
 
 const MobileNav: FC<MobileNavProps> = () => {
-  const iconSize = 40;
-
   return (
     <>
       {/* Mobile menu */}
@@ -44,26 +41,6 @@ const MobileNav: FC<MobileNavProps> = () => {
           </NavLink>
         </li>
       </ul>
-
-      {/* Mobile social icons */}
-
-      <div className="fixed bottom-10 left-[50%] flex translate-x-[-50%] gap-x-16">
-        <Link className="hover:opacity-50" to="">
-          <FaLinkedin size={iconSize} />
-        </Link>
-
-        <Link className="hover:opacity-50" to="">
-          <FaGithub size={iconSize} />
-        </Link>
-
-        <Link className="hover:opacity-50" to="">
-          <FaInstagram size={iconSize} />
-        </Link>
-
-        <Link className="hover:opacity-50" to="">
-          <FaLinkedin size={iconSize} />
-        </Link>
-      </div>
     </>
   );
 };
