@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply font-[Yeseva-One];
-    }
-    li {
-        @apply px-4 cursor-pointer;
-    }
+  body {
+    @apply font-[Yeseva-One];
+  }
+  li {
+    @apply cursor-pointer px-4;
+  }
 }

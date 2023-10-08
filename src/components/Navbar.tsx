@@ -8,23 +8,26 @@ import DesktopNav from "./DesktopNav";
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = () => {
-    const [navOpen, setNavOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
 
-    return (
-        <nav className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-primaryGray text-white shadow-md shadow-black">
-            <div>
-                <img src={Logo} alt="PJ logo image" className="w-48" />
-            </div>
+  return (
+    <nav className="fixed flex h-[80px] w-full items-center justify-between bg-primaryGray px-4 text-white shadow-md shadow-black">
+      <div>
+        <img src={Logo} alt="PJ logo image" className="w-48" />
+      </div>
 
-            <div onClick={() => setNavOpen((prev) => !prev)} className="text-2xl md:hidden z-10">
-                {navOpen ? <FaTimes /> : <FaBars />}
-            </div>
+      <div
+        onClick={() => setNavOpen((prev) => !prev)}
+        className="z-10 text-2xl md:hidden"
+      >
+        {navOpen ? <FaTimes /> : <FaBars />}
+      </div>
 
-            <DesktopNav />
+      <DesktopNav />
 
-            {navOpen && <MobileNav />}
-        </nav>
-    );
+      {navOpen && <MobileNav />}
+    </nav>
+  );
 };
 
 export default Navbar;
