@@ -8,7 +8,7 @@ const DesktopNav: FC<DesktopNavProps> = () => {
   return (
     <>
       {/* Menu */}
-      <ul className="hidden text-xl md:flex">
+      <ul className="hidden text-xl lg:flex">
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? "text-primaryLime" : "")}

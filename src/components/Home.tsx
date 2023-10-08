@@ -8,8 +8,8 @@ interface HomeProps {}
 const Home: FC<HomeProps> = () => {
   return (
     <main className="flex h-screen w-full flex-col items-center bg-primaryGray">
-      <div className="m-auto flex w-3/4 flex-row items-center justify-between pt-10">
-        <section className="text-5xl leading-snug text-white">
+      <div className="m-auto flex h-full w-11/12 flex-col items-center justify-evenly pt-10 lg:w-3/4 lg:flex-row">
+        <section className="text-3xl leading-snug text-white lg:text-3xl xl:text-5xl">
           <h1>
             HI, MY NAME IS{" "}
             <span className="font-extrabold text-primaryLime">PAVLE</span>
@@ -24,11 +24,9 @@ const Home: FC<HomeProps> = () => {
         <section>
           <img
             src={myImg}
-            width={400}
-            height={400}
             alt="dummyimage"
             loading="lazy"
-            className="rounded-full"
+            className="w-[200px] rounded-full md:w-[200px] lg:w-[300px] xl:w-[400px]"
           />
         </section>
       </div>

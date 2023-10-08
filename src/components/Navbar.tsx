@@ -18,7 +18,7 @@ const Navbar: FC<NavbarProps> = () => {
 
       <div
         onClick={() => setNavOpen((prev) => !prev)}
-        className="z-10 text-2xl md:hidden"
+        className="z-10 text-2xl lg:hidden"
       >
         {navOpen ? <FaTimes /> : <FaBars />}
       </div>
