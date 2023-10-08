@@ -5,13 +5,15 @@ import { NavLink } from "react-router-dom";
 interface DesktopNavProps {}
 
 const DesktopNav: FC<DesktopNavProps> = () => {
+  const activeStyle = "font-bold text-primaryLime underline underline-offset-4";
+
   return (
     <>
       {/* Menu */}
       <ul className="hidden text-xl lg:flex">
         <li>
           <NavLink
-            className={({ isActive }) => (isActive ? "text-primaryLime" : "")}
+            className={({ isActive }) => (isActive ? activeStyle : "")}
             to="/"
           >
             Home
@@ -19,7 +21,7 @@ const DesktopNav: FC<DesktopNavProps> = () => {
         </li>
         <li>
           <NavLink
-            className={({ isActive }) => (isActive ? "text-primaryLime" : "")}
+            className={({ isActive }) => (isActive ? activeStyle : "")}
             to="/about"
           >
             About
@@ -27,7 +29,7 @@ const DesktopNav: FC<DesktopNavProps> = () => {
         </li>
         <li>
           <NavLink
-            className={({ isActive }) => (isActive ? "text-primaryLime" : "")}
+            className={({ isActive }) => (isActive ? activeStyle : "")}
             to="/work"
           >
             My Work
@@ -35,15 +37,13 @@ const DesktopNav: FC<DesktopNavProps> = () => {
         </li>
         <li>
           <NavLink
-            className={({ isActive }) => (isActive ? "text-primaryLime" : "")}
+            className={({ isActive }) => (isActive ? activeStyle : "")}
             to="/content"
           >
             Content
           </NavLink>
         </li>
       </ul>
-
-      {/* Social icons */}
     </>
   );
 };
