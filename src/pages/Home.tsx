@@ -2,7 +2,7 @@ import { FC } from "react";
 
 // import { HiArrowNarrowRight } from "react-icons/hi";
 import myImg from "../assets/me.jpg";
-import SocialIcons from "./SocialIcons";
+import SocialIcons from "../components/SocialIcons";
 
 interface HomeProps {}
 
