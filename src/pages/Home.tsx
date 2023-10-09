@@ -8,8 +8,8 @@ interface HomeProps {}
 
 const Home: FC<HomeProps> = () => {
   return (
-    <main className="flex flex-col items-center bg-primaryGray">
-      <div className="m-auto flex h-screen w-11/12 flex-col items-center justify-evenly pt-10 md:w-3/4 md:flex-row md:gap-5">
+    <main className="flex h-screen flex-col items-center overflow-y-hidden bg-primaryGray">
+      <div className="my-auto flex w-11/12 flex-col items-center justify-evenly gap-y-20 pt-10 md:w-3/4 md:flex-row md:gap-5">
         <section className="text-center text-3xl leading-snug text-white md:text-left xl:text-5xl">
           <h1>
             HI, MY NAME IS
@@ -31,6 +31,7 @@ const Home: FC<HomeProps> = () => {
           />
         </section>
       </div>
+
       <SocialIcons />
     </main>
   );
