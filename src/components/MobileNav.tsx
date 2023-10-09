@@ -25,18 +25,12 @@ const MobileNav: FC<MobileNavProps> = () => {
           </NavLink>
         </li>
         <li className="py-6 text-4xl">
-          <NavLink
-            className={({ isActive }) => (isActive ? "text-primaryLime" : "")}
-            to="#"
-          >
+          <NavLink className="pointer-events-none opacity-25" to="/work">
             My Work
           </NavLink>
         </li>
         <li className="py-6 text-4xl">
-          <NavLink
-            className={({ isActive }) => (isActive ? "text-primaryLime" : "")}
-            to="#"
-          >
+          <NavLink className="pointer-events-none opacity-25" to="/content">
             Content
           </NavLink>
         </li>
