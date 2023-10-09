@@ -14,11 +14,10 @@ import postgres from "../assets/postgresql.png";
 import mongo from "../assets/mongo.png";
 import github from "../assets/github.png";
 
+import SingleTechnology from "./SingleTechnology";
+import { Technology } from "../interfaces";
+
 interface TechnologiesProps {}
-interface Technology {
-  name: string;
-  img: string;
-}
 
 const Technologies: FC<TechnologiesProps> = () => {
   const technologies: Technology[] = [
@@ -77,23 +76,14 @@ const Technologies: FC<TechnologiesProps> = () => {
   ];
 
   return (
-    <div className="mx-auto flex flex-wrap justify-center gap-x-10 gap-y-10 pt-5 text-center text-xl">
-      {technologies.map((tech, index) => (
-        <div className="flex h-52  w-40 flex-col items-center rounded-lg bg-opacity-0 px-5 py-2 font-semibold transition-colors duration-500 ease-in-out hover:bg-white hover:bg-opacity-25">
-          <h3
-            className={
-              index % 2 === 0
-                ? "text-primaryLime"
-                : "rounded-lg bg-primaryLime px-3 text-primaryGray"
-            }
-          >
-            {tech.name}
-          </h3>
-
-          <img src={tech.img} alt={tech.name} className="my-auto" />
-        </div>
-      ))}
-    </div>
+    <>
+      <h3 className="pb-10 pt-20 font-semibold tracking-wider">Technologies</h3>
+      <div className="mx-auto flex flex-wrap justify-center gap-x-10 gap-y-10 text-center text-xl">
+        {technologies.map((tech, index) => (
+          <SingleTechnology tech={tech} index={index} />
+        ))}
+      </div>
+    </>
   );
 };
 

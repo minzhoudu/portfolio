@@ -1,6 +1,5 @@
 import { FC } from "react";
 
-// import { HiArrowNarrowRight } from "react-icons/hi";
 import myImg from "../assets/me2.jpg";
 import SocialIcons from "../components/SocialIcons";
 
