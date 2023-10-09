@@ -1,5 +1,7 @@
 import { FC } from "react";
 
+import Technologies from "../components/Technologies";
+
 interface AboutProps {}
 
 const About: FC<AboutProps> = () => {
@@ -8,7 +10,7 @@ const About: FC<AboutProps> = () => {
       <div className="self-center py-32 text-7xl text-white">
         <h1>
           <span>About</span>{" "}
-          <span className="rounded-lg bg-primaryLime px-2">Me</span>
+          <span className="rounded-lg bg-primaryLime-dark px-2">Me</span>
         </h1>
       </div>
 
@@ -49,9 +51,10 @@ const About: FC<AboutProps> = () => {
           such as <span className="text-primaryLime">React</span> and{" "}
           <span className="text-primaryLime">Svelte</span>, and fell in love
           with backend framework{" "}
-          <span className="text-primaryLime">Nest.js</span> because of its built
-          with <span className="text-primaryLime">TypeScript</span> in mind for
-          type safety, and it has modular and highly scalable architecture.
+          <span className="text-primaryLime">Nest.js</span> due to its excellent{" "}
+          <span className="text-primaryLime">TypeScript</span> support and
+          robust type safety. Its modular structure and highly scalable
+          architecture further solidified my appreciation for it.
         </p>
 
         <p className="pt-5 text-2xl">
@@ -60,6 +63,16 @@ const About: FC<AboutProps> = () => {
           and <span className="text-primaryLime">Postgres</span> as well as
           NoSQL databases (<span className="text-primaryLime">MongoDB</span>)
         </p>
+
+        <p className="pt-5 text-2xl">
+          The latest technologies that caught my attention are{" "}
+          <span className="text-primaryLime">C# .NET</span> and{" "}
+          <span className="text-primaryLime">Rust</span>.
+        </p>
+
+        <h3 className="pt-20 font-semibold tracking-wider">Technologies</h3>
+
+        <Technologies />
       </div>
     </main>
   );
