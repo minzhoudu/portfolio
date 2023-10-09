@@ -30,7 +30,7 @@ const DesktopNav: FC<DesktopNavProps> = () => {
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? activeStyle : "")}
-            to="/work"
+            to="#"
           >
             My Work
           </NavLink>
@@ -38,7 +38,7 @@ const DesktopNav: FC<DesktopNavProps> = () => {
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? activeStyle : "")}
-            to="/content"
+            to="#"
           >
             Content
           </NavLink>
