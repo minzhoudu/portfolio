@@ -13,9 +13,11 @@ const Navbar: FC<NavbarProps> = () => {
 
   return (
     <nav className="fixed flex h-[80px] w-full items-center justify-between bg-primaryGray px-4 text-white shadow-md shadow-black">
-      <NavLink to="/">
-        <img src={Logo} alt="PJ logo image" className="w-48" />
-      </NavLink>
+      <div className="w-48">
+        <NavLink to="/">
+          <img src={Logo} alt="PJ logo image" />
+        </NavLink>
+      </div>
 
       <div
         onClick={() => setNavOpen((prev) => !prev)}
