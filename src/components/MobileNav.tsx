@@ -6,7 +6,6 @@ interface MobileNavProps {}
 const MobileNav: FC<MobileNavProps> = () => {
   return (
     <>
-      {/* Mobile menu */}
       <ul className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-primaryGray">
         <li className="py-6 text-4xl">
           <NavLink
