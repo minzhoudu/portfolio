@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import Technologies from "../components/Technologies";
+import Technologies from "../components/TechnologyIcons";
 import Biography from "../components/Biography";
 
 interface AboutProps {}

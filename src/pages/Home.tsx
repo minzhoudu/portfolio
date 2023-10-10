@@ -12,12 +12,12 @@ const Home: FC<HomeProps> = () => {
         <section className="text-center text-3xl leading-snug text-white md:text-left xl:text-5xl">
           <h1>
             HI, MY NAME IS
-            <span className="font-extrabold text-primaryLime"> PAVLE</span>.
+            <span className="font-bold text-primaryLime"> PAVLE</span>.
           </h1>
           <p>
             I'm a Full
-            <span className="font-extrabold text-primaryLime">Stack</span> Web
-            <span className="font-extrabold text-primaryLime"> Developer</span>.
+            <span className="font-bold text-primaryLime">Stack</span> Web
+            <span className="font-bold text-primaryLime"> Developer</span>.
           </p>
         </section>
 
