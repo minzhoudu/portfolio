@@ -25,7 +25,7 @@ const Navbar: FC<NavbarProps> = () => {
 
       <DesktopNav />
 
-      {navOpen && <MobileNav />}
+      {navOpen && <MobileNav setNavOpen={setNavOpen}/>}
     </nav>
   );
 };
