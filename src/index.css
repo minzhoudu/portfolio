@@ -3,6 +3,27 @@
 @tailwind utilities;
 
 @layer base {
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #86c232 #222629;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #222629;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #86c232;
+    border-radius: 20px;
+    border: 1px solid #000000;
+  }
   body {
     @apply font-mono;
   }
