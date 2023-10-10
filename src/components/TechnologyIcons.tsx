@@ -14,7 +14,7 @@ import postgres from "../assets/postgresql.png";
 import mongo from "../assets/mongo.png";
 import github from "../assets/github.png";
 
-import SingleTechnology from "./SingleTechnology";
+import SingleTechnology from "./SingleTechnologyIcon";
 import { Technology } from "../interfaces";
 
 interface TechnologiesProps {}
