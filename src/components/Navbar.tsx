@@ -1,5 +1,6 @@
 import { FC, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 import Logo from "../assets/logo.png";
 import MobileNav from "./MobileNav";
@@ -12,9 +13,9 @@ const Navbar: FC<NavbarProps> = () => {
 
   return (
     <nav className="fixed flex h-[80px] w-full items-center justify-between bg-primaryGray px-4 text-white shadow-md shadow-black">
-      <div>
+      <NavLink to="/">
         <img src={Logo} alt="PJ logo image" className="w-48" />
-      </div>
+      </NavLink>
 
       <div
         onClick={() => setNavOpen((prev) => !prev)}
@@ -25,7 +26,7 @@ const Navbar: FC<NavbarProps> = () => {
 
       <DesktopNav />
 
-      {navOpen && <MobileNav setNavOpen={setNavOpen}/>}
+      {navOpen && <MobileNav setNavOpen={setNavOpen} />}
     </nav>
   );
 };
