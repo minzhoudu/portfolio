@@ -38,8 +38,8 @@ const Biography: FC<BiographyProps> = () => {
 
       <Paragraph>
         My love for backend development led me to learn about databases, and I
-        started working with <Tech>MySQL</Tech> and <Tech>Postgres</Tech> as
-        well as NoSQL databases (<Tech>MongoDB</Tech>)
+        started working with <Tech>MySQL</Tech> and <Tech>Postgres</Tech>, as
+        well as NoSQL databases such as <Tech>MongoDB</Tech>.
       </Paragraph>
 
       <Paragraph>
