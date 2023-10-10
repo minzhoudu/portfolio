@@ -5,7 +5,7 @@ interface TechnologyProps {
 }
 
 const Technology: FC<TechnologyProps> = ({ children }) => {
-  return <span className="font-bold text-primaryLime"> {children}</span>;
+  return <span className="font-bold text-primaryLime">{children}</span>;
 };
 
 export default Technology;
