@@ -8,6 +8,7 @@ import react from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
 import next from "../assets/nextjs.png";
 import node from "../assets/node.png";
+import express from "../assets/express.png";
 import nest from "../assets/nest.png";
 import mysql from "../assets/mysql.png";
 import postgres from "../assets/postgresql.png";
@@ -48,6 +49,10 @@ const Technologies: FC<TechnologiesProps> = () => {
     {
       name: "Node.js",
       img: node,
+    },
+    {
+      name: "Express.js",
+      img: express,
     },
     {
       name: "Nest.js",
