@@ -9,7 +9,6 @@ const DesktopNav: FC<DesktopNavProps> = () => {
 
   return (
     <>
-      {/* Menu */}
       <ul className="hidden text-xl lg:flex">
         <li>
           <NavLink
