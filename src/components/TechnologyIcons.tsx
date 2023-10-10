@@ -14,6 +14,7 @@ import mysql from "../assets/mysql.png";
 import postgres from "../assets/postgresql.png";
 import mongo from "../assets/mongo.png";
 import github from "../assets/github.png";
+import bitbucket from "../assets/bitbucket.png";
 
 import SingleTechnology from "./SingleTechnologyIcon";
 import { Technology } from "../interfaces";
@@ -77,6 +78,10 @@ const Technologies: FC<TechnologiesProps> = () => {
     {
       name: "GitHub",
       img: github,
+    },
+    {
+      name: "Bitbucket",
+      img: bitbucket,
     },
   ];
 
