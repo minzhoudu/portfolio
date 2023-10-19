@@ -1,20 +1,20 @@
 import { FC } from "react";
 
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import js from "../assets/javascript.png";
-import ts from "../assets/typescript.png";
-import react from "../assets/react.png";
-import tailwind from "../assets/tailwind.png";
-import next from "../assets/nextjs.png";
-import node from "../assets/node.png";
-import express from "../assets/express.png";
-import nest from "../assets/nest.png";
-import mysql from "../assets/mysql.png";
-import postgres from "../assets/postgresql.png";
-import mongo from "../assets/mongo.png";
-import github from "../assets/github.png";
-import bitbucket from "../assets/bitbucket.png";
+import html from "../assets/technologies/html.png";
+import css from "../assets/technologies/css.png";
+import js from "../assets/technologies/javascript.png";
+import ts from "../assets/technologies/typescript.png";
+import react from "../assets/technologies/react.png";
+import tailwind from "../assets/technologies/tailwind.png";
+import next from "../assets/technologies/nextjs.png";
+import node from "../assets/technologies/node.png";
+import express from "../assets/technologies/express.png";
+import nest from "../assets/technologies/nest.png";
+import mysql from "../assets/technologies/mysql.png";
+import postgres from "../assets/technologies/postgresql.png";
+import mongo from "../assets/technologies/mongo.png";
+import github from "../assets/technologies/github.png";
+import bitbucket from "../assets/technologies/bitbucket.png";
 
 import SingleTechnology from "./SingleTechnologyIcon";
 import { Technology } from "../interfaces";
