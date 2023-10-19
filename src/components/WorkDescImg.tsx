@@ -24,7 +24,7 @@ const WorkDescImg: FC<WorkDescImg> = ({ src, title, description, url }) => {
 
       <div className="h-60 w-1 rounded-full bg-white"></div>
 
-      <img src={src} width={400} alt="testimg" />
+      <img className="rounded-xl" src={src} width={400} alt="testimg" />
     </div>
   );
 };

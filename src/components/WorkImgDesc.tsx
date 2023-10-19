@@ -10,7 +10,7 @@ interface WorkImgDesc {
 const WorkImgDesc: FC<WorkImgDesc> = ({ src, description, title, url }) => {
   return (
     <div className="flex items-center justify-center gap-24">
-      <img src={src} width={400} alt="testimg" />
+      <img className="rounded-xl" src={src} width={400} alt="testimg" />
 
       <div className="h-60 w-1 rounded-full bg-white"></div>
 
