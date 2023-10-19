@@ -27,7 +27,10 @@ const DesktopNav: FC<DesktopNavProps> = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink className="pointer-events-none opacity-25" to="/work">
+          <NavLink
+            className={({ isActive }) => (isActive ? activeStyle : "")}
+            to="/work"
+          >
             My Work
           </NavLink>
         </li>
