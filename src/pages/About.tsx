@@ -11,7 +11,7 @@ const About: FC<AboutProps> = () => {
       <div className="self-center py-32 text-7xl text-white">
         <h1>
           <span>About</span>{" "}
-          <span className="rounded-lg bg-primaryLime-dark px-2">Me</span>
+          <span className="rounded-lg bg-primaryLime-dark px-4">Me</span>
         </h1>
       </div>
 

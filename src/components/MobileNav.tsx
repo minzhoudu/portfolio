@@ -29,7 +29,7 @@ const MobileNav: FC<MobileNavProps> = ({ setNavOpen }) => {
         </li>
         <li className="py-6 text-4xl">
           <NavLink
-            className="pointer-events-none opacity-25"
+            className={({ isActive }) => (isActive ? "text-primaryLime" : "")}
             onClick={() => setNavOpen(false)}
             to="/work"
           >
