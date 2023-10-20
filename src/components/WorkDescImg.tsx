@@ -9,7 +9,7 @@ interface WorkDescImg {
 
 const WorkDescImg: FC<WorkDescImg> = ({ src, title, description, url }) => {
   return (
-    <div className="py flex items-center justify-center gap-24">
+    <div className="flex items-center justify-center gap-24">
       <div>
         <h2 className="mb-3 text-xl text-primaryLime">{title}</h2>
         <p className="w-[400px] pb-4 text-xl text-white">{description}</p>
