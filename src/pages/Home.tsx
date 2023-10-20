@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import myImg from "../assets/me2.jpg";
+import myImg from "../assets/me.jpg";
 import SocialIcons from "../components/SocialIcons";
 
 interface HomeProps {}
