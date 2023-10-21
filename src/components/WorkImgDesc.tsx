@@ -10,7 +10,12 @@ interface WorkImgDesc {
 const WorkImgDesc: FC<WorkImgDesc> = ({ src, description, title, url }) => {
   return (
     <div className="mx-auto mb-20 flex w-[90%] flex-col items-center justify-center gap-5 lg:mb-0 lg:w-full lg:flex-row lg:gap-24">
-      <img className="rounded-xl" src={src} width={400} alt="testimg" />
+      <img
+        className="rounded-xl lg:transition-all lg:duration-500 lg:ease-in-out lg:hover:scale-110 lg:hover:transform"
+        src={src}
+        width={400}
+        alt="testimg"
+      />
 
       <div className="hidden h-60 w-1 rounded-full bg-white lg:block"></div>
 
