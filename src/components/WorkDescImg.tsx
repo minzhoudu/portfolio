@@ -16,7 +16,7 @@ const WorkDescImg: FC<WorkDescImg> = ({ src, title, description, url }) => {
         <a
           href={url}
           target="_blank"
-          className="italic text-primaryLime underline underline-offset-4"
+          className="text-sm italic text-primaryLime underline underline-offset-4 lg:text-base"
         >
           Visit site
         </a>
