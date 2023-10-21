@@ -24,7 +24,12 @@ const WorkDescImg: FC<WorkDescImg> = ({ src, title, description, url }) => {
 
       <div className="h-60 w-1 rounded-full bg-white"></div>
 
-      <img className="rounded-xl" src={src} width={400} alt="testimg" />
+      <img
+        className="rounded-xl lg:transition-all lg:duration-500 lg:ease-in-out lg:hover:scale-110 lg:hover:transform"
+        src={src}
+        width={400}
+        alt="testimg"
+      />
     </div>
   );
 };
