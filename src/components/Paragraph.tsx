@@ -5,7 +5,7 @@ interface ParagraphProps {
 }
 
 const Paragraph: FC<ParagraphProps> = ({ children }) => {
-  return <p className="pt-5 text-xl lg:text-2xl">{children}</p>;
+  return <p className="pt-5 text-lg lg:text-2xl">{children}</p>;
 };
 
 export default Paragraph;
