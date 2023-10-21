@@ -12,7 +12,7 @@ const Navbar: FC<NavbarProps> = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <nav className="fixed flex h-[80px] w-full items-center justify-between bg-primaryGray px-4 text-white shadow-md shadow-black">
+    <nav className="fixed z-10 flex h-[80px] w-full items-center justify-between bg-primaryGray px-4 text-white shadow-md shadow-black">
       <div className="w-48">
         <NavLink to="/">
           <img src={Logo} alt="PJ logo image" />
