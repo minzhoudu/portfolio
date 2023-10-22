@@ -24,7 +24,7 @@ const Home: FC<HomeProps> = () => {
         <section>
           <img
             src={myImg}
-            alt="dummyimage"
+            alt="My profile image"
             loading="lazy"
             className="w-[200px] rounded-full xl:w-[400px]"
           />
