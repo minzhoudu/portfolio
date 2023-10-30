@@ -28,9 +28,9 @@ const Biography: FC<BiographyProps> = () => {
       </Paragraph>
 
       <Paragraph>
-        As i progressed, I started learning working with frontend frameworks
-        such as <Tech>React</Tech> and <Tech>Svelte</Tech>, and fell in love
-        with backend framework <Tech>Nest.js</Tech> due to its excellent{" "}
+        As i progressed, I started working with frontend frameworks such as{" "}
+        <Tech>React</Tech> and <Tech>Svelte</Tech>, and fell in love with
+        backend framework <Tech>Nest.js</Tech> due to its excellent{" "}
         <Tech>TypeScript</Tech> support and robust type safety. Its modular
         structure and highly scalable architecture further solidified my
         appreciation for it.
