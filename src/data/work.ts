@@ -1,7 +1,7 @@
-import flos from "../assets/work/flos.png";
-import bebitalia from "../assets/work/bebitalia.png";
-import arclinea from "../assets/work/arclinea.png";
-import louispoulsen from "../assets/work/louis.png";
+import flos from "../assets/work/flos.webp";
+import bebitalia from "../assets/work/bebitalia.webp";
+import arclinea from "../assets/work/arclinea.webp";
+import louispoulsen from "../assets/work/louis.webp";
 import { Work } from "../interfaces";
 
 export const work: Work[] = [
