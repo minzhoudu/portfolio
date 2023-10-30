@@ -8,7 +8,7 @@ interface WorkComponentProps {}
 const WorkComponent: FC<WorkComponentProps> = () => {
   return (
     <>
-      <h3 className="w-3/5 pb-10 text-center text-xl text-white underline underline-offset-4 lg:text-2xl">
+      <h3 className="w-3/5 pb-10 text-center text-xl font-semibold italic text-white lg:text-2xl">
         These are some of the projects I worked on
       </h3>
 
