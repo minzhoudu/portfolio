@@ -13,6 +13,7 @@ import postgres from "../assets/technologies/postgresql.png";
 import mongo from "../assets/technologies/mongo.png";
 import github from "../assets/technologies/github.png";
 import bitbucket from "../assets/technologies/bitbucket.png";
+import csharp from "../assets/technologies/csharp.png";
 
 import { Technology } from "../interfaces";
 
@@ -52,6 +53,10 @@ export const technologies: Technology[] = [
   {
     name: "Nest.js",
     img: nest,
+  },
+  {
+    name: "C#",
+    img: csharp,
   },
   {
     name: "MySQL",
