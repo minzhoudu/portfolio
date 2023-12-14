@@ -3,6 +3,7 @@ import css from "../assets/technologies/css.png";
 import js from "../assets/technologies/javascript.png";
 import ts from "../assets/technologies/typescript.png";
 import react from "../assets/technologies/react.png";
+import angular from "../assets/technologies/angular.png";
 import tailwind from "../assets/technologies/tailwind.png";
 import next from "../assets/technologies/nextjs.png";
 import node from "../assets/technologies/node.png";
@@ -14,6 +15,7 @@ import mongo from "../assets/technologies/mongo.png";
 import github from "../assets/technologies/github.png";
 import bitbucket from "../assets/technologies/bitbucket.png";
 import csharp from "../assets/technologies/csharp.png";
+import aws from "../assets/technologies/aws.png";
 
 import { Technology } from "../interfaces";
 
@@ -37,6 +39,10 @@ export const technologies: Technology[] = [
   {
     name: "React",
     img: react,
+  },
+  {
+    name: "Angular",
+    img: angular,
   },
   {
     name: "Next.js",
@@ -82,4 +88,8 @@ export const technologies: Technology[] = [
     name: "Bitbucket",
     img: bitbucket,
   },
+  {
+    name: "AWS",
+    img: aws,
+  }
 ];
