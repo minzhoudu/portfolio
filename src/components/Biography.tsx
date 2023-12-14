@@ -24,15 +24,16 @@ const Biography: FC<BiographyProps> = () => {
         on a frontend. As I delved deeper into the web development landscape, I
         discovered my fascination with the backend. <Tech>
           Node.js
-        </Tech> and <Tech>Express.js</Tech> were my first backend technologies.
+        </Tech> and <Tech>Express.js</Tech> were my first backend technologies,
+        followed by <Tech>ASP.NET Core</Tech> and <Tech>C#</Tech>.
       </Paragraph>
 
       <Paragraph>
         As i progressed, I started working with frontend frameworks such as{" "}
-        <Tech>React</Tech> and <Tech>Svelte</Tech>, and fell in love with
-        backend framework <Tech>Nest.js</Tech> due to its excellent{" "}
-        <Tech>TypeScript</Tech> support and robust type safety. Its modular
-        structure and highly scalable architecture further solidified my
+        <Tech>React</Tech>, <Tech>Angular</Tech> and <Tech>Svelte</Tech>, and
+        fell in love with backend framework <Tech>Nest.js</Tech> due to its
+        excellent <Tech>TypeScript</Tech> support and robust type safety. Its
+        modular structure and highly scalable architecture further solidified my
         appreciation for it.
       </Paragraph>
 
@@ -43,8 +44,7 @@ const Biography: FC<BiographyProps> = () => {
       </Paragraph>
 
       <Paragraph>
-        The latest technologies that caught my attention are{" "}
-        <Tech>C# .NET</Tech> and <Tech>Rust</Tech>.
+        The latest technology that caught my attention is and <Tech>Rust</Tech>.
       </Paragraph>
     </>
   );
