@@ -44,7 +44,8 @@ const Biography: FC<BiographyProps> = () => {
       </Paragraph>
 
       <Paragraph>
-        The latest technology that caught my attention is and <Tech>Rust</Tech>.
+        The latest technology that caught my attention, and i want to learn
+        about, is <Tech>Rust</Tech>.
       </Paragraph>
     </>
   );
