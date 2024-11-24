@@ -8,7 +8,7 @@ interface AboutProps {}
 const About: FC<AboutProps> = () => {
   return (
     <main className="flex w-full flex-col bg-primaryGray pb-10 pt-20">
-      <div className="self-center py-32 text-5xl text-white lg:text-7xl">
+      <div className="select-none self-center py-32 text-5xl text-white lg:text-7xl">
         <h1>
           <span>About</span>{" "}
           <span className="rounded-lg bg-primaryLime-dark px-4">Me</span>
