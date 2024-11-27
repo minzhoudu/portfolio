@@ -30,22 +30,18 @@ const ModalComponent = ({
       />
 
       <section
-        className="relative z-10 flex w-full max-w-md flex-col gap-7 rounded-xl border-2 border-white bg-primaryLime p-6 shadow-lg"
-        onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
+        className="relative z-10 flex max-w-sm flex-col gap-7 rounded-xl bg-primaryGray bg-opacity-50 p-6 shadow-lg backdrop-blur-md md:max-w-md"
+        onClick={(e) => e.stopPropagation()}
       >
-        <header className="flex items-center justify-between">
-          <h3 className="text-2xl font-extrabold">Language: {title}</h3>
-          <span
-            className="cursor-pointer rounded-full bg-red-700 px-2 py-[0.1px] text-xl text-white"
-            onClick={onClose}
-          >
-            X
-          </span>
+        <header className="flex justify-center">
+          <h3 className="text-lg font-extrabold text-white md:text-2xl">
+            Language: {title}
+          </h3>
         </header>
 
         <Separator />
 
-        <div className="rounded-md bg-primaryLime-dark p-4 font-bold text-primaryGray">
+        <div className="rounded-md bg-white bg-opacity-40 p-4 text-sm font-bold text-primaryGray shadow-md backdrop-blur-md md:text-lg">
           {children}
         </div>
 
@@ -54,7 +50,7 @@ const ModalComponent = ({
         <footer className="flex justify-end gap-3">
           {onConfirm && (
             <button
-              className="rounded bg-primaryLime-dark px-4 py-2 text-white hover:bg-primaryLime"
+              className="rounded bg-white bg-opacity-40 px-4 py-2 text-white shadow-md backdrop-blur-md hover:bg-opacity-70"
               onClick={onClose}
             >
               Confirm
@@ -62,7 +58,7 @@ const ModalComponent = ({
           )}
 
           <button
-            className="rounded bg-red-700 px-4 py-2 font-bold tracking-wider text-white hover:bg-red-400"
+            className="bg-opacity-65 rounded bg-red-700 px-4 py-2 font-bold tracking-wider text-white hover:bg-red-500 hover:bg-opacity-70"
             onClick={onClose}
           >
             Close
