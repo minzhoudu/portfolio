@@ -1,6 +1,8 @@
 export interface Technology {
+  id: string;
   name: string;
   img: string;
+  description: string;
 }
 
 export interface Work {

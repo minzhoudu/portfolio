@@ -1,7 +1,7 @@
 import { FC } from "react";
 
-import Technologies from "../components/TechnologyIcons";
 import Biography from "../components/Biography";
+import Technologies from "../components/Technologies";
 
 interface AboutProps {}
 
